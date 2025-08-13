@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Nihal</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                         <!-- <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li> -->
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,I'am <span class="home__title-color">Nihal</span><br> Performance Engineer <br>at Accenture</h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/muhammednihaalpp/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/nihaalpp" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+                <div class="home__img" style="overflow: visible;">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M437.5,298Q398,346,354,386Q310,426,246,447Q182,468,146,410Q110,352,80,294Q50,236,87,182Q124,128,176,84Q228,40,291,60Q354,80,399,130Q444,180,437.5,298Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path fill="none" d="M437.5,298Q398,346,354,386Q310,426,246,447Q182,468,146,410Q110,352,80,294Q50,236,87,182Q124,128,176,84Q228,40,291,60Q354,80,399,130Q444,180,437.5,298Z"/>
+                            <image class="home__blob-img" x="79" y="30" width="499" height="467" href="assets/img/imagedp.jpg" preserveAspectRatio="xMidYMid slice" />
+                        </g>
+                    </svg>
+                </div>
+   
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/imagedp.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Nihal</h2><p>Performance Test Engineer with hands-on experience in designing, executing, and analyzing
+                        performance tests using tools like JMeter, Dynatrace, and Splunk. Adept at identifying system
+                        bottlenecks, optimizing performance, and collaborating with cross functional teams to ensure
+                        scalable and resilient application delivery. Strong foundation in computer science with a degree
+                        from the University of Calicut and passionate about performance engineering and data analysis.</p> 
+                    <br><br>
+                        <a href="assets/cv/Resume-PTTesting-August2025.pdf" download class="button">Download CV</a>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!-- Work Experience Section -->
+             <section class="experience section" id="experience">
+                <h2 class="section-title">Work Experience</h2>    
+                    <div class="bd-grid experience__container">
+                            <ul class="experience__list">
+                                <li>
+                                    <h3>Performance Test Engineer </h3><h4>Accenture, Banglore, India (September,2024 – Present)</h4>
+                            <ul class="experience__details" style="list-style: disc; padding-left: 2rem;">   
+                                <li>Developed and executed load, stress and endurance tests using JMeter and Blazemeter.</li>
+                                <li>Utilized Dynatrace to monitor real-time application performance and traces.</li>
+                                <li>Correlated logs and performance metrics using Splunk to identify root causes.</li>
+                                <li>Collaborated with developers and DevOps team to fine-tune infrastructure based on test results.</li>
+                                <li>Created reusable JMeter test plans and efficient reports to highlight the metrics.</li>
+                                <li>Documented performance baselines and KPIs.</li>
+                            </ul>
+                            </li>
+                            </ul>
+                    </div>                                            
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Performance Testing and Engineering</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">JMeter</span>
+                            </div>
+                            <div class="skills__bar skills__ux"> 
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Blazemeter</span>
+                            </div>
+                            <div class="skills__bar skills__ux"> 
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>                            
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Dynatrace</span>
+                            </div>
+                            <div class="skills__bar skills__css">  
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Splunk</span>
+                            </div>
+                            <div class="skills__bar skills__js">  
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Postman</span>
+                            </div>
+                            <div class="skills__bar skills__ux"> 
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Performance Tuning</span>
+                            </div>
+                            <div class="skills__bar skills__ux"> 
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__ux"> 
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skills__bar skills__ux"> 
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <!-- <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section> -->
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form  action="https://formsubmit.co/mhdnihal77@gmail.com" method="POST" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title" >nihal.</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
