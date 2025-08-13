@@ -33,6 +33,10 @@
     --smaller-font-size: .875rem;
   }
 }
+body {
+  background-color:white;
+}
+
 
 /*===== BASE =====*/
 *, ::before, ::after {
@@ -50,7 +54,7 @@ body {
   color: var(--second-color);
 }
 
-h1, h2, p {
+h1, h2,h4, p {
   margin: 0;
 }
 
@@ -189,10 +193,16 @@ img {
 }
 .home__title {
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
 }
 .home__title-color {
   color: var(--first-color);
+}
+.home__subtitle {
+    font-size: 1.125rem; /* slightly smaller */
+    font-weight: 400;     /* normal weight instead of bold */
+    color: #0d0d2d;
+    margin-top: 0;        /* remove extra spacing above */
+    margin-bottom: 0.5rem;
 }
 .home__social {
   display: flex;
@@ -207,18 +217,7 @@ img {
 .home__social-icon:hover {
   color: var(--first-color);
 }
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 260px;
-}
-.home__blob {
-  fill: var(--first-color);
-}
-.home__blob-img {
-  width: 360px;
-}
+
 
 /*BUTTONS*/
 .button {
@@ -305,6 +304,75 @@ img {
 .skills__img {
   border-radius: 0.5rem;
 }
+
+/* IMAGE SETTINGS */
+.avatar-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.avatar-box {
+  width: 500px; /* Increase if needed */
+  height: auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.floating-icon {
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.icon1 {
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon2 {
+  top: 50%;
+  right: -90px;
+  transform: translateY(-50%);
+}
+
+.icon3 {
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon4 {
+  top: 50%;
+  left: -90px;
+  transform: translateY(-50%);
+}
+
+.home__content {
+  gap: 2rem !important; 
+}
+
+
 
 /* ===== WORK =====*/
 .work__container {
