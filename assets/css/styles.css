@@ -230,8 +230,10 @@ img {
   transition: 0.3s;
 }
 .button:hover {
+  transform: scale(1.05);
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
+
 
 /* ===== ABOUT =====*/
 .about__container {
@@ -247,7 +249,22 @@ img {
 .about__img img {
   width: 200px;
   border-radius: 0.5rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.about__img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+.about__img img {
+  position: relative;
+  border-radius: 20px;
+  z-index: 1;
+  box-shadow: 0 0 0 5px transparent;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+
 
 /* ===== SKILLS =====*/
 .skills__container {
@@ -301,9 +318,7 @@ img {
 .skills__ux {
   width: 85%;
 }
-.skills__img {
-  border-radius: 0.5rem;
-}
+
 
 /* IMAGE SETTINGS */
 .avatar-wrapper {
@@ -324,27 +339,39 @@ img {
 
 .avatar-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
   border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .floating-icon {
   position: absolute;
-  width: 100px;
-  height: 70px;
+  width: 100px;       /* reduced from 100px */
+  height: 70px;      /* reduced from 70px */
   background-color: white;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 36px;
+  font-size: 36px;   /* reduced from 36px */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.icon1 {
+.floating-icon:hover {
+  transform: scale(1.1);
+  /* box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); */
+}
+
+.icon1{
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
@@ -368,11 +395,33 @@ img {
   transform: translateY(-50%);
 }
 
+@media (max-width: 600px) {
+  .avatar-wrapper {
+    margin-top: 60px; /* optional to reduce vertical spacing */
+  }
+
+  .icon1 { top: -60px; }     /* brings top icon down */
+  .icon3 { bottom: -50px; }  /* brings bottom icon up */
+  .icon2 { right: -30px; }   /* brings right icon nearer */
+  .icon4 { left: -30px; }    /* brings left icon nearer */
+}
 .home__content {
   gap: 2rem !important; 
 }
+@media screen and (max-width: 480px) {
+  .avatar-box {
+    width: 90vw;
+  }
 
+  .floating-icon {
+    width: 70px;
+    height: 50px;
+  }
 
+  .floating-icon img {
+    border-radius: 15px;
+  }
+}
 
 /* ===== WORK =====*/
 .work__container {
@@ -408,6 +457,11 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact__button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== FOOTER =====*/
@@ -457,10 +511,7 @@ img {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
-  .home__img {
-    width: 300px;
-    bottom: 25%;
-  }
+ 
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -476,11 +527,31 @@ img {
     column-gap: 2rem;
     padding-top: 2rem;
   }
-  .contact__form {
-    width: 360px;
-    padding-top: 2rem;
-  }
-  .contact__container {
+  /* Contact Form Container Glow */
+.contact__form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.15); /* soft blue glow */
+  transition: box-shadow 0.3s ease;
+}
+
+.contact__input:focus,
+.contact__input:focus-visible,
+ textarea:focus {
+  border-color: var(--first-color); /* Use your theme's highlight color */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Soft blue glow */
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact__button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.4);
+  transition: 0.3s ease;
+}
+
+.contact__container {
     justify-items: center;
   }
 }
@@ -551,4 +622,18 @@ img {
   .home__img {
     width: 450px;
   }
+}
+.skills__img img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+  display: block;
+  max-height: 350px; /* optional to maintain size */
+}
+
+.skills__img img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
