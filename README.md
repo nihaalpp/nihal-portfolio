@@ -1,2 +1,2 @@
 # nihal-portfolio
-Personal portfolio website
+Personal portfolio website built using html,css and javascript.
